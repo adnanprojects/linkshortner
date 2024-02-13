@@ -10,6 +10,7 @@ app.use(cors());
 app.use(morgan('tiny'));
 app.use(helmet());
 app.use(express.json());
+app.use(express.static('public'));
 
 app.get('/', (request, response) => {
     response.json({
